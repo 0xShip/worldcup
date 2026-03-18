@@ -44,7 +44,7 @@ export default function ConceptGallery() {
             <div className="relative">
                 <div className="flex gap-6 animate-marquee w-max">
                     {doubled.map((item, i) => (
-                        <div key={i} className="flex-shrink-0 w-72 md:w-96 group">
+                        <div key={i} className="flex-shrink-0 w-52 md:w-80 group">
                             <div className="overflow-hidden rounded-2xl glass-surface">
                                 <img src={item.src} alt={item.label} className="w-full aspect-square object-cover grayscale group-hover:grayscale-0 transition-all duration-700" loading="lazy" />
                             </div>

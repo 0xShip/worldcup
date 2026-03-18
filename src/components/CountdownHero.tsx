@@ -42,7 +42,7 @@ export default function CountdownHero() {
 
             {/* Lobster image */}
             <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ ...transition, duration: 1 }} className="relative z-10 mb-8">
-                <img src={logo} alt="World Cup Lobster Logo" className="w-40 h-20 md:w-56 md:h-56 object-contain drop-shadow-[0_0_40px_rgba(255,77,0,0.25)]" />
+                <img src={logo} alt="World Cup Lobster Logo" className="w-40 h-20 md:w-56 md:h-40 object-contain drop-shadow-[0_0_40px_rgba(255,77,0,0.25)]" />
             </motion.div>
 
             {/* Headline */}
@@ -50,7 +50,8 @@ export default function CountdownHero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...transition, delay: 0.5 }}
-                className="font-display font-black text-2xl md:text-4xl leading-none uppercase text-foreground text-center">
+                // className="font-vt323 font-black text-2xl md:text-4xl leading-none uppercase text-foreground text-center">
+                className="font-vt323 font-black text-3xl md:text-5xl leading-none uppercase text-foreground text-center">
                 YOUR LOBSTER IS WAITING
             </motion.h1>
 
@@ -58,14 +59,15 @@ export default function CountdownHero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...transition, delay: 0.6 }}
-                className="text-[#8c7e65] text-sm md:text-base font-body mt-4 text-center max-w-md">
-                <p className="block">
+                // className="text-[#8c7e65] text-sm md:text-base font-body mt-4 text-center max-w-md">
+                className="text-[#758a7e] text-sm md:text-base font-body mt-4 text-center max-w-md ">
+                <p className="block  leading-[1.5]">
                     &gt; INITIALIZING SECURE UPLINK... [
                     <span className="text-[#ec7245]">OK</span>]
                 </p>
-                <p className="block">&gt; SOURCE: KICKGPT COMMAND</p>
-                <p className="block">&gt; SUBJECT: CLAIM YOUR FOOTBALL AI</p>
-                <p className="block">
+                <p className="block  leading-[1.5]">&gt; SOURCE: KICKGPT COMMAND</p>
+                <p className="block  leading-[1.5]">&gt; SUBJECT: CLAIM YOUR FOOTBALL AI</p>
+                <p className="block  leading-[1.5]">
                     &gt; <span className="text-[#ec7245]">WARNING</span>: LIMITED SLOTS. NO SECOND CHANCES.
                 </p>
             </motion.div>
@@ -75,7 +77,7 @@ export default function CountdownHero() {
                 <img
                     src={act}
                     alt="World Cup Lobster Logo"
-                    className="w-[25rem] h-[12.5rem] md:w-[35rem] md:h-[35rem] object-contain drop-shadow-[0_0_40px_rgba(255,77,0,0.25)]"
+                    className="w-[25rem] h-[10rem] md:w-[35rem] md:h-[16rem] object-contain drop-shadow-[0_0_40px_rgba(255,77,0,0.25)]"
                 />
             </motion.div>
 
@@ -97,7 +99,7 @@ export default function CountdownHero() {
                     { val: time.seconds, label: 'SEC' }
                 ].map((item, i) => (
                     <div key={item.label} className="flex flex-col items-center">
-                        <span className="font-display font-black text-[clamp(1.5rem,3vw,2rem)] leading-none tracking-tighter text-[#ff6b35] text-glow-lobster tabular-nums">{pad(item.val)}</span>
+                        <span className="font-vt323 font-display font-black text-[clamp(1.8rem,4vw,3rem)] leading-none tracking-tighter text-[#ff6b35] text-glow-lobster tabular-nums">{pad(item.val)}</span>
                         <span className="text-muted-foreground text-[10px] tracking-[0.3em] mt-2 font-body">{item.label}</span>
                         {i < 3 && <span className="absolute text-muted-foreground/30 text-[clamp(2rem,6vw,5rem)] font-display" style={{ position: 'relative' }}></span>}
                     </div>

@@ -20,7 +20,8 @@ export default function VideoSection() {
                 viewport={{ once: true }}
                 transition={{ ...transition, delay: 0.1 }}
                 whileHover={{ scale: 0.98 }}
-                className="relative w-full mx-auto aspect-video rounded-3xl overflow-hidden glass-surface shadow-heavy cursor-pointer group md:max-w-3xl lg:max-w-4xl">
+                // className="relative w-full mx-auto aspect-video rounded-3xl overflow-hidden glass-surface shadow-heavy cursor-pointer group md:max-w-3xl lg:max-w-4xl">
+                className="relative w-full mx-auto aspect-video rounded-3xl overflow-hidden glass-surface shadow-heavy cursor-pointer group md:max-w-lg lg:max-w-xl">
                 {/* Placeholder video embed — replace src with actual video */}
                 <iframe
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ"
