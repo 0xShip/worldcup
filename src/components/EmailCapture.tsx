@@ -21,7 +21,7 @@ export default function EmailCapture() {
                 transition={{ ...transition, delay: 0.1 }}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="inline-flex items-center gap-3 px-8 py-3 rounded-full bg-[#bf392b] text-primary-foreground font-body text-sm tracking-wider uppercase hover:shadow-[var(--glow-lobster)] transition-shadow duration-300">
+                className="inline-flex items-center gap-3 px-8 py-3 bg-[#c0392b] text-white font-body text-[13px] tracking-[3px] uppercase border-0 cursor-pointer transition-colors duration-200 hover:bg-[#d14a3a]">
                 <Mail size={18} />
                 {/* Subscribe via Email */}
                 Claim your football lobster

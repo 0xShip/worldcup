@@ -50,8 +50,7 @@ export default function CountdownHero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...transition, delay: 0.5 }}
-                // className="font-vt323 font-black text-2xl md:text-4xl leading-none uppercase text-foreground text-center">
-                className="font-vt323 font-black text-3xl md:text-5xl leading-none uppercase text-foreground text-center">
+                className="font-vt323 text-white text-[32px] md:text-[52px] leading-none tracking-[2px] md:tracking-[4px] mb-2 text-center text-glow-title">
                 YOUR LOBSTER IS WAITING
             </motion.h1>
 
@@ -59,15 +58,14 @@ export default function CountdownHero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...transition, delay: 0.6 }}
-                // className="text-[#8c7e65] text-sm md:text-base font-body mt-4 text-center max-w-md">
-                className="text-[#758a7e] text-sm md:text-base font-body mt-4 text-center max-w-md ">
-                <p className="block  leading-[1.5]">
+                className="text-[#9a8a7a] text-[12px] tracking-[2px] font-body mt-4 mb-6 text-center max-w-md leading-[1.8]">
+                <p className="block">
                     &gt; INITIALIZING SECURE UPLINK... [
                     <span className="text-[#ec7245]">OK</span>]
                 </p>
-                <p className="block  leading-[1.5]">&gt; SOURCE: KICKGPT COMMAND</p>
-                <p className="block  leading-[1.5]">&gt; SUBJECT: CLAIM YOUR FOOTBALL AI</p>
-                <p className="block  leading-[1.5]">
+                <p className="block">&gt; SOURCE: KICKGPT COMMAND</p>
+                <p className="block">&gt; SUBJECT: CLAIM YOUR FOOTBALL AI</p>
+                <p className="block">
                     &gt; <span className="text-[#ec7245]">WARNING</span>: LIMITED SLOTS. NO SECOND CHANCES.
                 </p>
             </motion.div>
@@ -91,17 +89,32 @@ export default function CountdownHero() {
             </motion.p>
 
             {/* Countdown numbers */}
-            <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ ...transition, delay: 0.3 }} className="flex items-center gap-3 md:gap-6 z-10">
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ ...transition, delay: 0.3 }}
+                className="flex items-end gap-3 md:gap-4 z-10"
+            >
                 {[
                     { val: time.days, label: 'DAYS' },
                     { val: time.hours, label: 'HRS' },
                     { val: time.minutes, label: 'MIN' },
                     { val: time.seconds, label: 'SEC' }
                 ].map((item, i) => (
-                    <div key={item.label} className="flex flex-col items-center">
-                        <span className="font-vt323 font-display font-black text-[clamp(1.8rem,4vw,3rem)] leading-none tracking-tighter text-[#ff6b35] text-glow-lobster tabular-nums">{pad(item.val)}</span>
-                        <span className="text-muted-foreground text-[10px] tracking-[0.3em] mt-2 font-body">{item.label}</span>
-                        {i < 3 && <span className="absolute text-muted-foreground/30 text-[clamp(2rem,6vw,5rem)] font-display" style={{ position: 'relative' }}></span>}
+                    <div key={item.label} className="flex items-end">
+                        <div className="flex flex-col items-center">
+                            <span className="font-vt323 font-black text-[32px] md:text-[36px] leading-none text-[#ff6b35] text-glow-lobster tabular-nums">
+                                {pad(item.val)}
+                            </span>
+                            <span className="text-[#5a4a3a] text-[10px] tracking-[2px] mt-[2px] font-body">
+                                {item.label}
+                            </span>
+                        </div>
+                        {i < 3 && (
+                            <span className="relative font-vt323 text-[28px] md:text-[32px] text-[#3a2a1a] self-center -top-3 md:-top-3 px-1">
+                                :
+                            </span>
+                        )}
                     </div>
                 ))}
             </motion.div>
@@ -115,7 +128,7 @@ export default function CountdownHero() {
                 transition={{ ...transition, delay: 0.4 }}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className="inline-flex items-center gap-3 px-8 py-3 mt-8 rounded-full bg-[#bf392b] text-primary-foreground font-body text-sm tracking-wider uppercase hover:shadow-[var(--glow-lobster)] transition-shadow duration-300 z-10">
+                className="inline-flex items-center gap-3 px-8 py-3 mt-8 bg-[#c0392b] text-white font-body text-[13px] tracking-[3px] uppercase border-0 cursor-pointer transition-colors duration-200 hover:bg-[#d14a3a] z-10">
                 <Mail size={18} />
                 Claim your football lobster
             </motion.a>

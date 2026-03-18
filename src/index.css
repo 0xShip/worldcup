@@ -99,6 +99,11 @@
   .font-vt323 {
     font-family: 'VT323', monospace;
   }
+
+  /* Title glow similar to design spec */
+  .text-glow-title {
+    text-shadow: 0 0 30px rgba(255, 107, 53, 0.4);
+  }
 }
 
 /* Scrollbar */
