@@ -2,7 +2,7 @@
 // import conceptGermany from '@/assets/concept-germany.jpg'
 // import conceptCruyff from '@/assets/concept-cruyff.jpg'
 import conceptBrazil from '@/assets/concept-brazil.jpg'
-import conceptRonaldo from '@/assets/concept-ronaldo.jpg'
+import conceptRonaldo from '@/assets/concept-ronaldo.png'
 import pic1 from '@/assets/1.jpg'
 import pic2 from '@/assets/2.jpg'
 import pic3 from '@/assets/3.jpg'
