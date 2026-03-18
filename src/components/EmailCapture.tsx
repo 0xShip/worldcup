@@ -24,7 +24,9 @@ export default function EmailCapture() {
                 className="inline-flex items-center gap-3 px-8 py-3 bg-[#c0392b] text-white font-body text-[13px] tracking-[3px] uppercase border-0 cursor-pointer transition-colors duration-200 hover:bg-[#d14a3a]">
                 <Mail size={18} />
                 {/* Subscribe via Email */}
-                Claim your football lobster
+                <span className="whitespace-nowrap text-[11px] tracking-[2px] md:text-[13px] md:tracking-[3px]">
+                    Claim your football lobster
+                </span>
             </motion.a>
 
             <motion.p
