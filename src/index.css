@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;700;900&family=Geist+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 150 20% 5%;
+    --foreground: 140 10% 95%;
+
+    --card: 150 15% 8%;
+    --card-foreground: 140 10% 95%;
+
+    --popover: 150 15% 8%;
+    --popover-foreground: 140 10% 95%;
+
+    --primary: 145 70% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 150 12% 13%;
+    --secondary-foreground: 140 10% 95%;
+
+    --muted: 150 10% 15%;
+    --muted-foreground: 145 8% 50%;
+
+    --accent: 38 60% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 0 0% 100% / 0.08;
+    --input: 0 0% 100% / 0.08;
+    --ring: 145 70% 40%;
+
+    --radius: 1.5rem;
+
+    --sidebar-background: 150 20% 5%;
+    --sidebar-foreground: 140 10% 95%;
+    --sidebar-primary: 145 70% 40%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 150 12% 13%;
+    --sidebar-accent-foreground: 140 10% 95%;
+    --sidebar-border: 0 0% 100% / 0.08;
+    --sidebar-ring: 145 70% 40%;
+
+    --font-display: 'Schibsted Grotesk', sans-serif;
+    --font-body: 'Geist Mono', monospace;
+
+    --shadow-heavy: 0 20px 50px rgba(0, 0, 0, 0.5);
+    --glow-lobster: 0 0 30px rgba(34, 160, 90, 0.3);
+    --glow-gold: 0 0 20px rgba(200, 170, 80, 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-glow-lobster {
+    text-shadow: var(--glow-lobster);
+  }
+
+  .text-glow-gold {
+    text-shadow: var(--glow-gold);
+  }
+
+  .glass-surface {
+    background: linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0) 100%);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .shadow-heavy {
+    box-shadow: var(--shadow-heavy);
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.1);
+  border-radius: 2px;
+}
