@@ -58,7 +58,7 @@ export default function CountdownHero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...transition, delay: 0.6 }}
-                className="text-[#9a8a7a] text-[12px] tracking-[2px] font-body mt-4 mb-6 text-center max-w-md leading-[1.8]">
+                className="text-[#9a8a7a] text-[15px] tracking-[2px] font-body mt-4 mb-6 text-center max-w-md leading-[1.8]">
                 <p className="block">
                     &gt; INITIALIZING SECURE UPLINK... [
                     <span className="text-[#ec7245]">OK</span>]
@@ -106,7 +106,7 @@ export default function CountdownHero() {
                             <span className="font-vt323 font-black text-[32px] md:text-[36px] leading-none text-[#ff6b35] text-glow-lobster tabular-nums">
                                 {pad(item.val)}
                             </span>
-                            <span className="text-[#5a4a3a] text-[10px] tracking-[2px] mt-[2px] font-body">
+                            <span className="text-[#5a4a3a] text-[14px] tracking-[2px] mt-[2px] font-body">
                                 {item.label}
                             </span>
                         </div>
