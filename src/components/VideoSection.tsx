@@ -11,7 +11,7 @@ export default function VideoSection() {
                 viewport={{ once: true }}
                 transition={transition}
                 className="text-accent text-[10px] tracking-[0.3em] uppercase font-body mb-6 text-center">
-                THE CINEMATIC
+                {/* THE CINEMATIC */}
             </motion.p>
 
             <motion.div
@@ -20,7 +20,7 @@ export default function VideoSection() {
                 viewport={{ once: true }}
                 transition={{ ...transition, delay: 0.1 }}
                 whileHover={{ scale: 0.98 }}
-                className="relative aspect-video rounded-3xl overflow-hidden glass-surface shadow-heavy cursor-pointer group">
+                className="relative w-full mx-auto aspect-video rounded-3xl overflow-hidden glass-surface shadow-heavy cursor-pointer group md:max-w-3xl lg:max-w-4xl">
                 {/* Placeholder video embed — replace src with actual video */}
                 <iframe
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -40,7 +40,7 @@ export default function VideoSection() {
                 viewport={{ once: true }}
                 transition={{ ...transition, delay: 0.3 }}
                 className="text-muted-foreground text-xs font-body text-center mt-4">
-                Keep It Up, Keep It Connected.
+                {/* Keep It Up, Keep It Connected. */}
             </motion.p>
         </section>
     )

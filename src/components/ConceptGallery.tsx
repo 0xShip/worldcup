@@ -1,23 +1,29 @@
+// import conceptMessi from '@/assets/concept-messi.jpg'
+// import conceptGermany from '@/assets/concept-germany.jpg'
+// import conceptCruyff from '@/assets/concept-cruyff.jpg'
 import conceptBrazil from '@/assets/concept-brazil.jpg'
-import conceptCruyff from '@/assets/concept-cruyff.jpg'
-import conceptGermany from '@/assets/concept-germany.jpg'
-import conceptMessi from '@/assets/concept-messi.jpg'
 import conceptRonaldo from '@/assets/concept-ronaldo.jpg'
-import pic6 from '@/assets/1.jpg'
-import pic7 from '@/assets/2.jpg'
-import pic8 from '@/assets/3.jpg'
+import pic1 from '@/assets/1.jpg'
+import pic2 from '@/assets/2.jpg'
+import pic3 from '@/assets/3.jpg'
+import pic4 from '@/assets/4.jpg'
+import pic5 from '@/assets/5.jpg'
+import pic6 from '@/assets/6.jpg'
 
 import { motion } from 'framer-motion'
 
 const concepts = [
-    { src: conceptMessi, label: 'LEGEND × LOBSTER' },
-    { src: conceptGermany, label: 'DEUTSCHLAND EDITION' },
-    { src: conceptCruyff, label: 'TOTAL FOOTBALL' },
+    // { src: conceptMessi, label: 'LEGEND × LOBSTER' },
+    // { src: conceptGermany, label: 'DEUTSCHLAND EDITION' },
+    // { src: conceptCruyff, label: 'TOTAL FOOTBALL' },
     { src: conceptBrazil, label: 'SAMBA COLLECTION' },
     { src: conceptRonaldo, label: 'THE CELEBRATION' },
-    { src: pic6, label: 'THE CELEBRATION' },
-    { src: pic7, label: 'THE SAMBA' },
-    { src: pic8, label: 'THE DEUTSCHLAND' },
+    { src: pic1, label: 'THE CELEBRATION' },
+    { src: pic2, label: 'THE SAMBA' },
+    { src: pic3, label: 'THE DEUTSCHLAND' },
+    { src: pic4, label: 'THE CELEBRATION' },
+    { src: pic5, label: 'THE SAMBA' },
+    { src: pic6, label: 'THE DEUTSCHLAND' },
 ]
 
 // Double for seamless marquee
@@ -31,8 +37,8 @@ export default function ConceptGallery() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ type: 'spring' as const, duration: 0.5, bounce: 0 }}
-                className="text-accent text-[10px] tracking-[0.3em] uppercase font-body mb-10 text-center">
-                CONCEPT COLLECTION
+                className="text-[#8c7e65] text-sm md:text-base font-body mb-10 text-center">
+                FOOTBALL AI COLLECTION
             </motion.p>
 
             <div className="relative">
