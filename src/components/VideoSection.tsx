@@ -22,12 +22,13 @@ export default function VideoSection() {
                 whileHover={{ scale: 0.98 }}
                 // className="relative w-full mx-auto aspect-video rounded-3xl overflow-hidden glass-surface shadow-heavy cursor-pointer group md:max-w-3xl lg:max-w-4xl">
                 className="relative w-full mx-auto aspect-video rounded-3xl overflow-hidden glass-surface shadow-heavy cursor-pointer group md:max-w-lg lg:max-w-xl">
-                {/* Placeholder video embed — replace src with actual video */}
                 <iframe
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                    src="https://embed.wave.video/2RluWJL6fx8G9p9V"
                     title="World Cup Lobster Teaser"
                     className="w-full h-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    frameBorder={0}
+                    allow="autoplay; fullscreen"
+                    scrolling="no"
                     allowFullScreen
                 />
 
