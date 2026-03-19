@@ -16,14 +16,14 @@ const concepts = [
     // { src: conceptMessi, label: 'LEGEND × LOBSTER' },
     // { src: conceptGermany, label: 'DEUTSCHLAND EDITION' },
     // { src: conceptCruyff, label: 'TOTAL FOOTBALL' },
-    { src: conceptBrazil, label: 'SAMBA COLLECTION' },
-    { src: conceptRonaldo, label: 'THE CELEBRATION' },
-    { src: pic1, label: 'THE CELEBRATION' },
-    { src: pic2, label: 'THE SAMBA' },
-    { src: pic3, label: 'THE DEUTSCHLAND' },
-    { src: pic4, label: 'THE CELEBRATION' },
-    { src: pic5, label: 'THE SAMBA' },
-    { src: pic6, label: 'THE DEUTSCHLAND' },
+    { src: conceptBrazil, label: 'THE SAMBA' }, // 巴西
+    { src: conceptRonaldo, label: 'THE SIUUU' }, // 罗纳尔多
+    { src: pic1, label: 'THE TEAM' }, // 西班牙
+    { src: pic2, label: 'THE GOAT' }, // 梅西
+    { src: pic3, label: 'THE SHOT' }, // 姆巴佩
+    { src: pic4, label: 'THE CELEBRATION' }, // 贝克汉姆
+    { src: pic5, label: 'THE LEGEND' }, // 马拉多纳
+    { src: pic6, label: 'THE ENJOYMENT' }, // 斯内德
 ]
 
 // Double for seamless marquee

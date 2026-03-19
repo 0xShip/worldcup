@@ -1,4 +1,4 @@
-import act from '@/assets/act.png'
+import act from '@/assets/act.jpg'
 import logo from '@/assets/logo-designer.png'
 import { motion } from 'framer-motion'
 import { Mail } from 'lucide-react'
@@ -41,7 +41,7 @@ export default function CountdownHero() {
             </div>
 
             {/* Lobster image */}
-            <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ ...transition, duration: 1 }} className="relative z-10 mb-8">
+            <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ ...transition, duration: 1 }} className="relative z-10 mt-5">
                 <img src={logo} alt="World Cup Lobster Logo" className="w-40 h-20 md:w-56 md:h-40 object-contain drop-shadow-[0_0_40px_rgba(255,77,0,0.25)]" />
             </motion.div>
 
@@ -58,15 +58,15 @@ export default function CountdownHero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ ...transition, delay: 0.6 }}
-                className="text-[#9a8a7a] text-[15px] tracking-[2px] font-body mt-4 mb-6 text-center max-w-md leading-[1.8]">
+                className="text-[#c7b7a6] text-[15px] tracking-[2px] font-body mt-4 mb-6 text-center max-w-md leading-[1.8]">
                 <p className="block">
                     &gt; INITIALIZING SECURE UPLINK... [
-                    <span className="text-[#ec7245]">OK</span>]
+                    <span className="text-[#ff6b35]">OK</span>]
                 </p>
                 <p className="block">&gt; SOURCE: KICKGPT COMMAND</p>
                 <p className="block">&gt; SUBJECT: CLAIM YOUR FOOTBALL AI</p>
                 <p className="block">
-                    &gt; <span className="text-[#ec7245]">WARNING</span>: LIMITED SLOTS. NO SECOND CHANCES.
+                    &gt; <span className="text-[#ff6b35]">WARNING</span>: LIMITED SLOTS. NO SECOND CHANCES.
                 </p>
             </motion.div>
 
@@ -106,7 +106,7 @@ export default function CountdownHero() {
                             <span className="font-vt323 font-black text-[32px] md:text-[36px] leading-none text-[#ff6b35] text-glow-lobster tabular-nums">
                                 {pad(item.val)}
                             </span>
-                            <span className="text-[#5a4a3a] text-[14px] tracking-[2px] mt-[2px] font-body">
+                            <span className="text-[#c7b7a6] text-[14px] tracking-[2px] mt-[2px] font-body">
                                 {item.label}
                             </span>
                         </div>

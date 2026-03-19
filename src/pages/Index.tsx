@@ -6,7 +6,7 @@ import SocialLinks from "@/components/SocialLinks";
 
 export default function Index() {
   return (
-    <main className="min-h-screen bg-background">
+    <main className="min-h-screen">
       <CountdownHero />
       <VideoSection />
       <ConceptGallery />

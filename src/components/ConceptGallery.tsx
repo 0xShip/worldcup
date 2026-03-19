@@ -16,14 +16,14 @@ const concepts = [
     // { src: conceptMessi, label: 'LEGEND × LOBSTER' },
     // { src: conceptGermany, label: 'DEUTSCHLAND EDITION' },
     // { src: conceptCruyff, label: 'TOTAL FOOTBALL' },
-    { src: conceptBrazil, label: 'SAMBA COLLECTION' },
-    { src: conceptRonaldo, label: 'THE CELEBRATION' },
-    { src: pic1, label: 'THE CELEBRATION' },
-    { src: pic2, label: 'THE SAMBA' },
-    { src: pic3, label: 'THE DEUTSCHLAND' },
-    { src: pic4, label: 'THE CELEBRATION' },
-    { src: pic5, label: 'THE SAMBA' },
-    { src: pic6, label: 'THE DEUTSCHLAND' },
+    { src: conceptBrazil, label: 'THE SAMBA' }, // 巴西
+    { src: conceptRonaldo, label: 'THE SIUUU' }, // 罗纳尔多
+    { src: pic1, label: 'THE TEAM' }, // 西班牙
+    { src: pic2, label: 'THE GOAT' }, // 梅西
+    { src: pic3, label: 'THE SHOT' }, // 姆巴佩
+    { src: pic4, label: 'THE CELEBRATION' }, // 贝克汉姆
+    { src: pic5, label: 'THE LEGEND' }, // 马拉多纳
+    { src: pic6, label: 'THE ENJOYMENT' }, // 斯内德
 ]
 
 // Double for seamless marquee
@@ -37,7 +37,7 @@ export default function ConceptGallery() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ type: 'spring' as const, duration: 0.5, bounce: 0 }}
-                className="text-[#8c7e65] text-sm md:text-base font-body mb-10 text-center">
+                className="font-vt323 text-white text-[32px] md:text-[52px] leading-none tracking-[2px] md:tracking-[4px] mb-10 text-center text-glow-title">
                 FOOTBALL AI COLLECTION
             </motion.p>
 
@@ -48,7 +48,7 @@ export default function ConceptGallery() {
                             <div className="overflow-hidden rounded-2xl glass-surface">
                                 <img src={item.src} alt={item.label} className="w-full aspect-square object-cover grayscale group-hover:grayscale-0 transition-all duration-700" loading="lazy" />
                             </div>
-                            <p className="text-accent text-[10px] tracking-[0.3em] uppercase font-body mt-3 text-center">{item.label}</p>
+                            <p className="text-accent text-[14px] tracking-[0.3em] uppercase font-body mt-3 text-center">{item.label}</p>
                         </div>
                     ))}
                 </div>
