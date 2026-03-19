@@ -13,7 +13,7 @@ export default function Index() {
       <EmailCapture />
       <SocialLinks />
 
-      <footer className="text-center py-6 text-muted-foreground text-[10px] tracking-[0.2em] uppercase font-body">
+      <footer className="text-center py-6 text-[#c7b7a6] text-[14px] tracking-[0.2em] uppercase font-body">
         © 2026 WORLD CUP LOBSTER
       </footer>
     </main>
